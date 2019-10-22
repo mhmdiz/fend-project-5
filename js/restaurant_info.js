@@ -174,22 +174,22 @@ createReviewHTML = (review) => {
   const li = document.createElement('li');
   const name = document.createElement('p');
   name.innerHTML = review.name;
-  name.id ='rName';
+  name.setAttribute('class', 'review-name');
   li.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
-  date.id ='rDate';
+  date.setAttribute('class', 'review-date');
   li.appendChild(date);
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
-  rating.id ='rRating';
+  rating.setAttribute('class', 'review-rating');
   li.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
-  comments.id ='rComments';
+  comments.setAttribute('class', 'review-comments');
   li.appendChild(comments);
 
   return li;

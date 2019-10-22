@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurants-cache-v1';
+const staticCacheName = 'restaurants-cache-v2';
 const resources = [
   '/',
   'index.html',
